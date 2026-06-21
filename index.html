@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 E-Commerce Store</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Laptop">
+            <h2>Laptop</h2>
+            <p>₹45,000</p>
+            <button onclick="addToCart('Laptop',45000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Phone">
+            <h2>Smart Phone</h2>
+            <p>₹18,000</p>
+            <button onclick="addToCart('Smart Phone',18000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Watch">
+            <h2>Smart Watch</h2>
+            <p>₹3,500</p>
+            <button onclick="addToCart('Smart Watch',3500)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div class="cart">
+        <h2>🛍 Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
